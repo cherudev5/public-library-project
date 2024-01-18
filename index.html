@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+    <link rel="stylesheet" href="styles.css" >
+    
+</head>
+<body>
+    <header class="bg-light">
+        <div class="container py-3">
+            <h1 class="text-center">PUBLIC LIBRARY</h1>
+            <form id="search-form" class="form-inline my-3">
+                <input id="search" class="form-control" type="search" placeholder="Search book by category" aria-label="Search">
+                <button class="button" type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#popular reads">Popular Reads</a>
+        <a href="#Childrens' category">Childrens' category</a>
+        <a href="#History category">History category</a>
+        <a href="#science category">Science category</a>
+        <a href="#Technology category">Technology category</a>
+    </nav>
+    <div >
+        <p id="results"></p>
+            <diV id="booksearch">
+           
+        </diV>
+    </div>
+
+    <main class="container py-3">
+        <section id="popular reads">
+            <h2>Popular Reads</h2>
+            <div id="popbooks"class="container1">
+                <div class="item">
+                    <img src="https://via.placeholder.com/150x200" alt="Book Cover">
+                
+                    <h3>Book Title</h3>
+                    <p>Author Name</p>
+                    <p><a>read book</a></p>
+                </div>
+               
+            </div>
+        </section>
+
+        <section id ="Childrens' category">
+            <h3>Childrens' Category </h3>
+            <div id="bookscategory" class="container1">
+            </div>
+        </section>
+
+        <section id="History category">
+            <h3>History Category</h3>
+            <div id="History" class="container1">
+            </div>
+        </section>
+
+        <section id="science category">
+            <h3>Science Category</h3>
+            <div id="science" class="container1">
+            </div>
+        </section> 
+
+        <section id="Technology category">
+            <h3>Technology category</h3>
+            <div id="Technology" class="container1">
+            </div>
+        </section>
+        
+        <section>
+            <h2>Comments</h2>
+            <form>
+                <div id="comment-section"class="form-group">
+                    <label for="comment">Add a comment:</label>
+                    <textarea class="form-control" id="comment" rows="3"></textarea>
+                </div>
+                <button id="submitcomment" type="submit" class="button">Submit</button>
+            </form>                             
+            <ul  class="list-unstyled">
+                <li id="pcomments"></li>
+                            
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>About</h3>
+                    <p>Learn more about our bookstore.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Contact</h3>
+                    <p>Get in touch with us.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Get Help</h3>
+                    <p>Find answers to your questions.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js" type="text/javascript"></script>
+   </body>
+</html>
